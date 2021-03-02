@@ -53,6 +53,16 @@
       Coded by <a href="https://www.frontendmentor.io/profile/Lordex18">Jesus Borrero</a>.
     </div>
   </footer>
+
+  <script>
+    const options = document.querySelectorAll('.option');
+    options.forEach(option => {
+      option.addEventListener('click', (event) => {
+        options.forEach(option => option.firstElementChild.style.fontWeight = 'normal');
+        option.firstElementChild.style.fontWeight = 'bold';
+      });
+    });
+  </script>
 </body>
 
 </html>
