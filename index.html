@@ -58,8 +58,12 @@
     const options = document.querySelectorAll('.option');
     options.forEach(option => {
       option.addEventListener('click', (event) => {
-        options.forEach(option => option.firstElementChild.style.fontWeight = 'normal');
-        option.firstElementChild.style.fontWeight = 'bold';
+        (getComputedStyle(option.children[0]).fontWeight != 700)
+          ? option.children[0].style.fontWeight = 700
+          : option.children[0].style.fontWeight = 400;
+        (getComputedStyle(option.children[1]).display != 'block')
+          ? option.children[1].style.display = 'block'
+          : option.children[1].style.display = 'none';
       });
     });
   </script>

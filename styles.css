@@ -17,8 +17,8 @@ main .card {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
   width: 327px;
   height: 535px;
   border: none;
@@ -66,22 +66,33 @@ main .card__title::first-letter {
 
 main .card__questions {
   position: relative;
-  top: -25px;
+  top: -31px;
   margin: 0 auto;
-  width: calc(85% - 2px);
-  outline: 1px solid;
+  width: calc(85% + 3px);
 }
 
 main .card__questions .option {
+  padding-left: 3px;
   border-bottom: 1px solid #cccccc;
+  background: url("./images/icon-arrow-down.svg") no-repeat 100% 10%;
+  cursor: pointer;
 }
 
 main .card__questions p.question {
+  margin-top: 19px;
+  margin-bottom: 16px;
   color: #445;
   font-size: 13px;
+  font-weight: normal;
 }
 
 main .card__questions p.answer {
+  display: none;
+  position: relative;
+  top: -4px;
+  left: -1px;
+  line-height: 19px;
+  width: 90%;
   color: #778;
   font-size: 12px;
 }
@@ -103,8 +114,8 @@ footer .attribution a {
   main .card {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-55%, -56%);
-            transform: translate(-55%, -56%);
+    -webkit-transform: translate(-50%, -42%);
+            transform: translate(-50%, -42%);
   }
 }
 /*# sourceMappingURL=styles.css.map */
