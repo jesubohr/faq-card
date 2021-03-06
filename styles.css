@@ -158,8 +158,8 @@ footer .attribution a {
   main .card__image--desktop > img:nth-of-type(2) {
     position: absolute;
     top: -57%;
-    left: -493px;
-    clip: rect(290px, 966px, 945px, 576px);
+    left: -495px;
+    clip: rect(290px, 966px, 800px, 576px);
   }
   main .card__image--desktop > img:last-of-type {
     position: absolute;
